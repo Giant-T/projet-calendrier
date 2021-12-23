@@ -1,0 +1,62 @@
+table.hour-separation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0;
+}
+
+.hour-separation tr td {
+  border-bottom: 3px dashed #bbbb;
+  color: #bbbb;
+  text-shadow: 1px 0.5px 1px rgb(150, 150, 150);
+  vertical-align: bottom;
+}
+
+.hour-separation tr:last-child > td {
+  border-bottom: 0;
+}
+.calendar {
+  border-radius: 15px; 
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  overflow: hidden;
+  width: 75vw;
+  height: 75vh;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.calendar-stripe-gray, .calendar-stripe-light {
+  flex: 1 1 auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: calc(75vw / 7);
+}
+
+.calendar-stripe-gray {
+  background-color: rgb(235, 235, 235);
+}
+
+.calendar-stripe-light {
+  background-color: whitesmoke;
+}
+
+.activity {
+  position: relative;
+  width: 100%;
+  padding-right: 6px;
+  display: block;
+  background-color: #f4c80a66;
+  text-align: right;
+  color: rgb(44, 44, 44);
+  text-shadow: 1px 0.5px 1px rgba(180, 180, 180, .85);
+  font-weight: bold;
+  border: 3px dashed #f4c80a;
+  box-sizing: border-box;
+  max-width: calc(75vw / 7);
+}
